@@ -136,6 +136,7 @@ This block runs the entire training pipeline.
 ---
 
 ## 4. Project File Organization
+```
 NYCTTripDuration/
 │
 ├── data/
@@ -153,10 +154,11 @@ NYCTTripDuration/
 │   └── EDA.ipynb
 │
 └── README.md
-
+```
 ---
 
 ## 5. Conceptual Summary
 `Data Preprocessing` → `Feature Engineering` → `Model Pipeline (Polynomial Ridge Regression)` → `Evaluation` → `Model Deployment`
 A complete supervised learning pipeline transforming raw trip data into an interpretable and deployable predictive model.
+
 
