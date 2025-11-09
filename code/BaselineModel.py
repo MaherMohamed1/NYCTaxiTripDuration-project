@@ -1,5 +1,3 @@
-import os
-import pickle
 import numpy as np
 import pandas as pd
 from sklearn.pipeline import Pipeline
@@ -137,6 +135,3 @@ if __name__ == '__main__':
     x_test = test_df.drop(columns=drop_cols)
     y_test = test_df['trip_duration']
     model = main(x_train, x_val, y_train, y_val, x_test, y_test)
-
-    with open(os.path.join(r'C:\Users\Maher\NYCTTDProjects\NYCTTripDuration', 'model.pkl'), 'wb') as file:
-        pickle.dump(model, file)
